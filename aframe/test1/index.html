@@ -12,10 +12,15 @@
   <body>
     
 <a-scene background="color:#ECECEC" class="fullscreen" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui=""><canvas class="a-canvas" data-aframe-canvas="true" width="300" height="150"></canvas>
+  
+<a-assets>
+        <a-asset-item id="mainMap" src="https://dr-headcrab.github.io/aframe/test1/demoMap.dae"></a-asset-item>
+      </a-assets>  
+  
 <a-box position="-1 -0.45666 -3" rotation="" color="#4CC3D9" shadow="" material="" geometry=""></a-box>
 <a-sphere position="-6.427 -0.47925 -1.71822" radius="1.25" color="#EF2D5E" shadow="" material="color:#ad7e4d" geometry="primitive:dodecahedron"></a-sphere><a-sphere position="2.78084 -0.17246 -2.23247" radius="1.25" color="#EF2D5E" shadow="" material="color:#ad7e4d" geometry="primitive:dodecahedron"></a-sphere>
 
-<a-collada-model src="https://dr-headcrab.github.io/aframe/test1/demoMap.dae"></a-collada-model>
+<a-collada-model src="mainMap"></a-collada-model>
 <a-gltf-model src="https://dr-headcrab.github.io/aframe/test1/demoMap.glb"></a-gltf-model>
     
   </body>
