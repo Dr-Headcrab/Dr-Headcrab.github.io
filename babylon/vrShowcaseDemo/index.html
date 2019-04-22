@@ -61,6 +61,12 @@
             var environment = scene.createDefaultEnvironment({ enableGroundShadow: true, groundYBias: 1 });
             environment.setMainColor(BABYLON.Color3.FromHexString("#74b9ff"))
             
+            //load mesh test
+            BABYLON.SceneLoader.ImportMesh("", "assets/", "rubixCube.fbx", scene, function (newMeshes) {
+                 // Set the target of the camera to the first imported mesh
+
+            });
+            
             // Shadows
             var shadowGenerator = new BABYLON.ShadowGenerator(1024, light);
             shadowGenerator.useBlurExponentialShadowMap = true;
